@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Slatki snovi · Handmade by Jelena · gnezda, posteljine i prekrivači za bebe</title>
+<meta name="description" content="Ručno rađena gnezda za bebe, posteljine po meri, pletenice, prekrivači i baldahini. Izrada po porudžbini, vez imena po želji, dostava širom Srbije.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600;700;800&family=Parisienne&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f6f3ee; --paper:#fffaf6; --peach:#f2c3a0; --peach-soft:#fbe9dc; --peach-deep:#b8683f;
+  --blush:#f4abbc; --blush-soft:#fbe8ec; --taupe:#e4d8cc; --ink:#3a2c28; --muted:#7d6c65; --line:#eadfd5;
+  --night:#342a38; --night-2:#453849;
+  --radius:26px; --shadow:0 18px 40px -22px rgba(58,44,40,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Mulish",system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.05;letter-spacing:-.01em}
+.script{font-family:"Parisienne",cursive;font-weight:400;color:var(--peach-deep);letter-spacing:0}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--peach-deep)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:15px 28px;border-radius:999px;font-weight:800;font-size:15px;border:1.5px solid var(--ink);transition:transform .15s,background .15s,color .15s;cursor:pointer;text-align:center}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--peach-deep);border-color:var(--peach-deep);transform:translateY(-2px)}
+.btn-ghost{background:transparent}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+
+/* announce */
+.announce{background:var(--ink);color:#f7e9df;font-size:13px;font-weight:700;overflow:hidden;white-space:nowrap}
+.announce .track{display:inline-flex;gap:48px;padding:9px 0;animation:mq 38s linear infinite}
+.announce span::before{content:"☾";margin-right:12px;color:var(--peach)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+header.site{position:sticky;top:0;z-index:50;background:rgba(246,243,238,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;line-height:1}
+.logo img{width:50px;height:50px;border-radius:50%;border:1px solid var(--line)}
+.logo b{font-family:"Cormorant Garamond",serif;font-size:25px;font-weight:600;display:block}
+.logo small{font-family:"Parisienne",cursive;font-size:17px;color:var(--peach-deep)}
+nav.main{display:flex;gap:28px;font-weight:700;font-size:14.5px}
+nav.main a{position:relative;padding:4px 0}
+nav.main a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--peach);transition:width .2s}
+nav.main a:hover::after{width:100%}
+.icons{display:flex;gap:10px;align-items:center}
+.icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--line);background:var(--paper);position:relative;cursor:pointer}
+.icon-btn svg{width:19px;height:19px;stroke:var(--ink);fill:none;stroke-width:2}
+.badge{position:absolute;top:-4px;right:-4px;background:var(--peach-deep);color:#fff;font-size:11px;font-weight:800;min-width:19px;height:19px;border-radius:10px;display:grid;place-items:center}
+.menu-btn{display:none}
+
+/* hero */
+.hero{padding:56px 0 70px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(44px,5.6vw,76px);margin:16px 0 20px}
+.hero h1 .script{font-size:1.02em;display:inline-block}
+.lead{font-size:18px;color:var(--muted);max-width:50ch}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 36px}
+.hero-stats{display:flex;gap:34px;flex-wrap:wrap}
+.hero-stats b{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:600;display:block;line-height:1}
+.hero-stats small{font-size:13px;color:var(--muted);font-weight:700}
+.hero-art{position:relative;padding:0 0 40px 40px}
+.hero-art .arch{border-radius:400px 400px 30px 30px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow);background:var(--taupe)}
+.hero-art .arch img{width:100%;height:100%;object-fit:cover}
+.hero-art .mini{position:absolute;left:0;bottom:0;width:40%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:8px solid var(--cream);box-shadow:var(--shadow)}
+.hero-art .mini img{width:100%;height:100%;object-fit:cover}
+.hero-art .moon{position:absolute;right:-6px;top:-10px;width:92px;height:92px}
+.hero-art .note{position:absolute;right:8px;bottom:56px;background:var(--paper);border-radius:18px;padding:12px 16px;box-shadow:var(--shadow);font-size:13px;font-weight:700;max-width:190px}
+.hero-art .note span{font-family:"Parisienne",cursive;font-size:22px;color:var(--peach-deep);display:block;font-weight:400;line-height:1.1}
+.stars{position:absolute;inset:0;pointer-events:none}
+.stars i{position:absolute;color:var(--peach);font-style:normal;font-size:18px}
+
+/* usps */
+.usps{border-block:1px solid var(--line);background:var(--paper)}
+.usps .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.usp{display:flex;gap:14px;align-items:center;padding:24px 18px;border-right:1px dashed var(--line)}
+.usp:last-child{border-right:0}
+.usp .ic{width:46px;height:46px;border-radius:50%;background:var(--peach-soft);display:grid;place-items:center;font-size:20px;flex:0 0 46px}
+.usp b{display:block;font-size:15px}
+.usp small{color:var(--muted);font-size:13px}
+
+section.block{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:44px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(36px,4.4vw,58px);margin-top:10px}
+.sec-head p{color:var(--muted);max-width:46ch}
+
+/* products */
+.grid-products{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--paper);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.card .media{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--taupe)}
+.card .media img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .media img{transform:scale(1.04)}
+.tag{position:absolute;top:14px;left:14px;background:var(--ink);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px;z-index:2}
+.tag.peach{background:var(--peach-deep)}
+.tag.blush{background:var(--blush);color:var(--ink)}
+.card .body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:27px}
+.card .desc{color:var(--muted);font-size:14.5px;flex:1}
+.price{font-weight:800;font-size:16px;margin-top:8px}
+.price small{font-weight:700;color:var(--muted);font-size:12px;margin-right:4px}
+.price s{color:var(--muted);font-weight:600;font-size:13px;margin-left:6px}
+.card.help{background:var(--peach-soft);border-style:dashed;justify-content:center}
+.card.help .body{justify-content:center}
+
+/* feature tedi */
+.feature{background:var(--paper);border-radius:48px;margin:0 16px;overflow:hidden}
+.feature .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center;padding-block:90px}
+.feature h2{font-size:clamp(38px,4.6vw,60px);margin:12px 0 16px}
+.feature p.lead{font-size:17px}
+.combos{display:grid;gap:12px;margin:28px 0 30px}
+.combo{display:grid;grid-template-columns:64px 1fr auto;gap:16px;align-items:center;background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:10px 18px 10px 10px}
+.combo img{width:64px;height:64px;border-radius:14px;object-fit:cover}
+.combo b{display:block;font-size:15.5px}
+.combo small{color:var(--muted);font-size:13px}
+.combo .p{font-weight:800;white-space:nowrap;font-size:14.5px;text-align:right}
+.combo .p small{display:block;font-weight:700}
+.feature-art{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.feature-art img{width:100%;border-radius:24px;object-fit:cover;aspect-ratio:3/4}
+.feature-art img.tall{grid-row:span 2;aspect-ratio:auto;height:100%}
+
+/* cenovnik */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tabs button{border:1.5px solid var(--line);background:var(--paper);padding:10px 18px;border-radius:999px;font-weight:800;font-size:14px;cursor:pointer}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pricelist{display:none;grid-template-columns:repeat(2,1fr);gap:20px}
+.pricelist.on{display:grid}
+.plist{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px}
+.plist h3{font-size:26px;margin-bottom:4px}
+.plist .sub{font-size:13px;color:var(--muted);margin-bottom:12px}
+.plist ul{list-style:none}
+.plist li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dotted var(--taupe);font-size:15px}
+.plist li:last-child{border-bottom:0}
+.plist li b{white-space:nowrap}
+.pl-note{font-size:13px;color:var(--muted);margin-top:18px}
+
+/* night band */
+.night{background:var(--night);color:#efe3dc;position:relative;overflow:hidden;text-align:center;padding:110px 0}
+.night .wrap{position:relative;max-width:860px}
+.night blockquote{font-family:"Cormorant Garamond",serif;font-size:clamp(34px,4.6vw,58px);line-height:1.1;color:#fff;margin:18px 0 22px}
+.night blockquote em{font-family:"Parisienne",cursive;font-style:normal;color:var(--peach);font-weight:400}
+.night p{color:#d8c9c3;max-width:60ch;margin:0 auto}
+.night .eyebrow{color:var(--peach)}
+.night .sky i{position:absolute;color:#f7dcc6;font-style:normal;opacity:.7}
+.night .bigmoon{position:absolute;right:6%;top:40px;width:110px;height:110px;opacity:.9}
+
+/* dezeni */
+.patterns .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.pat-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.pat{border-radius:18px;overflow:hidden;background:var(--paper);border:1px solid var(--line)}
+.pat img{width:100%;aspect-ratio:1;object-fit:cover}
+.pat span{display:block;padding:7px 8px;font-size:12px;font-weight:800;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* reviews */
+.reviews{columns:3;column-gap:22px}
+.review{break-inside:avoid;margin-bottom:22px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.review .bubble{background:var(--blush-soft);border-radius:20px 20px 20px 6px;padding:14px 16px;font-size:15.5px;line-height:1.5}
+.review .bubble + .bubble{margin-top:8px}
+.review .who{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:13px;color:var(--muted);font-weight:700}
+.review .who i{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--peach),var(--blush))}
+.review .who b{color:var(--ink)}
+.review.big{background:var(--peach-soft)}
+.review.big .bubble{font-family:"Parisienne",cursive;font-size:30px;background:transparent;padding:4px 0;color:var(--peach-deep);line-height:1.2}
+
+/* order steps */
+.order .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.steps{list-style:none;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:18px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:18px 20px}
+.steps li::before{content:"0" counter(s);font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:600;color:#fff;background:#c9a58e;border-radius:50%;width:52px;height:52px;display:grid;place-items:center;flex:0 0 52px;line-height:1}
+.steps b{display:block;font-size:15.5px}
+.steps span{color:var(--muted);font-size:14.5px}
+.ship{background:var(--ink);color:#f3e6de;border-radius:var(--radius);padding:32px}
+.ship h3{color:#fff;font-size:30px;margin-bottom:14px}
+.ship ul{list-style:none;display:grid;gap:12px;font-size:15px}
+.ship li{padding-left:26px;position:relative}
+.ship li::before{content:"☾";position:absolute;left:0;color:var(--peach)}
+.ship b{color:#fff}
+
+/* ig */
+.ig-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.ig-grid a{aspect-ratio:1;overflow:hidden;border-radius:18px;display:block}
+.ig-grid img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.ig-grid a:hover img{transform:scale(1.07)}
+
+/* faq */
+.faq{max-width:820px;margin:0 auto}
+details{border-bottom:1px solid var(--line);padding:22px 0;overflow:hidden}
+summary{cursor:pointer;list-style:none;font-family:"Cormorant Garamond",serif;font-weight:600;font-size:25px;display:flex;justify-content:space-between;gap:18px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:"Mulish";font-weight:800;font-size:24px;transition:transform .2s;color:var(--peach-deep);flex:0 0 auto}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:12px;max-width:66ch}
+
+footer{background:var(--night);color:#d8c9c3;padding:72px 0 28px;margin-top:96px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:56px}
+footer .logo b{color:#fff}
+footer .logo small{color:var(--peach)}
+footer h4{color:#fff;font-family:"Cormorant Garamond",serif;font-size:22px;margin-bottom:14px;font-weight:600}
+footer li{list-style:none;margin:8px 0;font-size:14px}
+footer li a:hover{color:var(--peach)}
+footer .legal{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;font-size:13px;opacity:.7;flex-wrap:wrap;gap:12px}
+
+@media (max-width:1024px){
+  .grid-products{grid-template-columns:repeat(2,1fr)}
+  .usps .wrap{grid-template-columns:repeat(2,1fr)}
+  .usp:nth-child(2){border-right:0}
+  .ig-grid{grid-template-columns:repeat(3,1fr)}
+  .reviews{columns:2}
+  footer .cols{grid-template-columns:1fr 1fr}
+  .pat-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:860px){
+  nav.main{display:none}
+  .menu-btn{display:grid}
+  .hero .wrap,.feature .wrap,.patterns .wrap,.order .wrap{grid-template-columns:1fr}
+  .hero{padding-top:28px}
+  .hero-art{order:-1;max-width:440px;margin:0 auto;width:100%}
+  .feature{margin:0 10px;border-radius:32px}
+  .feature .wrap{padding-block:56px;gap:36px}
+  .pricelist{grid-template-columns:1fr}
+  section.block{padding:68px 0}
+  .night{padding:80px 0}
+  .night .bigmoon{width:70px;height:70px;top:24px;right:4%}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .logo small{display:none}
+  .icons a[aria-label=Pretraga]{display:none}
+  .logo b{font-size:22px}
+  .grid-products{grid-template-columns:1fr}
+  .usps .wrap{grid-template-columns:1fr}
+  .usp{border-right:0;border-bottom:1px dashed var(--line)}
+  .usp:last-child{border-bottom:0}
+  .hero-stats{gap:22px}
+  .hero-art{padding:0 0 30px 24px}
+  .hero-art .moon{width:64px;height:64px;right:0;top:-6px}
+  .hero-art .note{right:0;bottom:36px;max-width:160px;font-size:12px}
+  .pat-grid{grid-template-columns:repeat(3,1fr)}
+  .reviews{columns:1}
+  .combo{grid-template-columns:52px 1fr;padding-right:14px}
+  .combo img{width:52px;height:52px}
+  .combo .p{grid-column:2;text-align:left}
+  .combo .p small{display:inline;margin-left:4px}
+  .plist{padding:22px 18px}
+  .plist li{font-size:14px}
+  footer .cols{grid-template-columns:1fr}
+}
+.mobile-nav{display:none}
+@media (max-width:860px){header.site.menu-open .mobile-nav{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;padding:8px 24px 18px;border-bottom:1px solid var(--line);box-shadow:0 14px 24px -18px rgba(0,0,0,.35)}.mobile-nav a{padding:13px 0;font-size:17px;border-bottom:1px solid var(--line)}.mobile-nav a:last-child{border-bottom:0}}
+</style>
+</head>
+<body>
+
+<div class="announce" aria-label="Obaveštenja">
+  <div class="track">
+    <span>Ručno rađeni proizvodi</span><span>Dostava širom Srbije</span><span>Izrada po porudžbini</span><span>Vez imena na svim proizvodima</span><span>Besplatna dostava od 15.000 din uz uplatu pre slanja</span>
+    <span>Ručno rađeni proizvodi</span><span>Dostava širom Srbije</span><span>Izrada po porudžbini</span><span>Vez imena na svim proizvodima</span><span>Besplatna dostava od 15.000 din uz uplatu pre slanja</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/logo.jpg" alt="Slatki snovi logo"><span><b>Slatki snovi</b><small>handmade by Jelena</small></span></a>
+    <nav class="main" aria-label="Glavna navigacija">
+      <a href="tedi-gnezdo.html">Tedi gnezdo</a>
+      <a href="#ponuda">Ponuda</a>
+      <a href="#cenovnik">Cenovnik</a>
+      <a href="#dezeni">Dezeni</a>
+      <a href="#utisci">Utisci</a>
+      <a href="#porucivanje">Poručivanje</a>
+    </nav>
+    <div class="icons">
+      <a class="icon-btn" href="#" aria-label="Pretraga"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge">0</span></a>
+      <button class="icon-btn menu-btn" aria-label="Meni" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Ručno rađeno · izrada po porudžbini</span>
+      <h1>Ljubav, kvalitet i sigurnost <span class="script">u svakom detalju</span></h1>
+      <p class="lead">Gnezda za bebe, posteljine za sve vrste krevetaca i kolevki, pletenice, prekrivači i baldahini. Sve šijem po vašoj meri, u dezenu koji izaberete, i sa imenom ako želite.</p>
+      <div class="ctas">
+        <a class="btn btn-dark" href="tedi-gnezdo.html">Tedi gnezdo →</a>
+        <a class="btn btn-ghost" href="#cenovnik">Pogledaj cenovnik</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>8.3k</b><small>pratilaca na Instagramu</small></div>
+        <div><b>10–15</b><small>radnih dana izrada</small></div>
+        <div><b>po meri</b><small>svih dimenzija</small></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="stars" aria-hidden="true"><i style="top:6%;left:10%">✦</i><i style="top:30%;left:2%;font-size:12px">✦</i><i style="top:2%;right:34%;font-size:13px">✦</i></div>
+      <div class="arch"><img src="img/Dc21a0vDV5I_03.jpg" alt="Tedi gnezdo sa jastukom meda u krevecu"></div>
+      <div class="mini"><img src="img/DcgVtbnNuq6.jpg" alt="Komplet za ovalni krevetac sa jastukom oblakom i pletenicom"></div>
+      <svg class="moon" viewBox="0 0 100 100" aria-hidden="true"><path d="M62 8a42 42 0 1 0 30 62A36 36 0 0 1 62 8z" fill="#f2c3a0"/></svg>
+      <div class="note"><span>premekan</span>Tedi gnezdo, trenutno vaš omiljeni proizvod</div>
+    </div>
+  </div>
+</section>
+
+<div class="usps">
+  <div class="wrap">
+    <div class="usp"><span class="ic">🧵</span><div><b>Ručno rađeno</b><small>Svaki komad šijem po porudžbini</small></div></div>
+    <div class="usp"><span class="ic">📏</span><div><b>Po meri i po želji</b><small>Za sve vrste krevetaca i kolevki</small></div></div>
+    <div class="usp"><span class="ic">✍️</span><div><b>Vez imena</b><small>Moguć na svim proizvodima</small></div></div>
+    <div class="usp"><span class="ic">📦</span><div><b>Dostava širom Srbije</b><small>Besplatna od 15.000 din</small></div></div>
+  </div>
+</div>
+
+<section class="block" id="ponuda">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Ponuda</span><h2>Sve za bebin <span class="script">kutak</span></h2></div>
+      <p>Kod mene u ponudi možete pronaći sve ono što vam je potrebno za početak, da dočekate dolazak bebe spremni.</p>
+    </div>
+    <div class="grid-products">
+      <a class="card" href="tedi-gnezdo.html">
+        <div class="media"><span class="tag peach">Vaš omiljeni</span><img src="img/Dc21a0vDV5I.jpg" alt="Tedi gnezdo sa mašnom"></div>
+        <div class="body"><h3>Tedi gnezdo</h3><p class="desc">U 3 kombinacije: skroz tedi, tedi i pamučno platno, tedi i muslin gaza. Uz gnezdo dobijate jastuk meda.</p>
+          <span class="price"><small>od</small>4.900 din</span></div>
+      </a>
+      <a class="card" href="#cenovnik" data-tab="gnezda">
+        <div class="media"><img src="img/gnezdo-pletenina.jpg" alt="Gnezdo od pletenine u bež boji"></div>
+        <div class="body"><h3>Gnezdo od pletenine</h3><p class="desc">Do 6 meseci ili do 9/12 meseci. Po želji sa karnerima ili mašnom.</p>
+          <span class="price"><small>od</small>4.300 din</span></div>
+      </a>
+      <a class="card" href="#cenovnik">
+        <div class="media"><img src="img/DboEr65sqYW.jpg" alt="Gnezdo u dezenu sa jastukom sa imenom"></div>
+        <div class="body"><h3>Gnezdo u dezenu</h3><p class="desc">Standardni model ili 2u1, gde se obod odvaja rajfešlusom i postaje ogradica za krevetac kad beba preraste gnezdo.</p>
+          <span class="price"><small>od</small>3.500 din</span></div>
+      </a>
+      <a class="card" href="#cenovnik">
+        <div class="media"><img src="img/DdgVcwDNaNY.jpg" alt="Bela posteljina sa izvezenim monogramom"></div>
+        <div class="body"><h3>Posteljine po meri</h3><p class="desc">Za sve vrste krevetaca, kolevki, okrugle i ovalne krevece, i za stariju decu. Čaršavi sa lastisom, jastučnice, jorganske navlake.</p>
+          <span class="price"><small>čaršav od</small>1.100 din</span></div>
+      </a>
+      <a class="card" href="#cenovnik">
+        <div class="media"><img src="img/DcgVtbnNuq6.jpg" alt="Pletenica i jastuk oblak u ovalnom krevecu"></div>
+        <div class="body"><h3>Pletenice</h3><p class="desc">Od bebi pliša, pamuka sa elastinom ili pletenine. Meke i nežne, punjene silikonskim vlaknom, od 120 do 360 cm.</p>
+          <span class="price"><small>od</small>2.000 din</span></div>
+      </a>
+      <a class="card" href="#cenovnik">
+        <div class="media"><span class="tag blush">Jesenja akcija</span><img src="img/DdRig1UDdyd_02.jpg" alt="Zimska ćebenca sa izvezenim imenima"></div>
+        <div class="body"><h3>Zimsko ćebence sa vezom</h3><p class="desc">Mekano, toplo i preslatko, 75×100 cm. Vez po želji je uračunat u cenu.</p>
+          <span class="price">2.000 din<s>od 2.400</s></span></div>
+      </a>
+      <a class="card" href="#cenovnik">
+        <div class="media"><img src="img/DdEZZabtwCe.jpg" alt="Prekrivač od pletenine sa izvezenim imenom"></div>
+        <div class="body"><h3>Prekrivači</h3><p class="desc">Pletenina, wafl soft, minki i meki somot, 75×100 cm. Radimo ih po meri i u bojama i dezenima po vašoj želji.</p>
+          <span class="price"><small>od</small>1.100 din</span></div>
+      </a>
+      <a class="card" href="#cenovnik">
+        <div class="media"><img src="img/baldahin-roze.jpg" alt="Roze baldahin od tila iznad krevetca"></div>
+        <div class="body"><h3>Baldahin od tila</h3><p class="desc">Od mekanog tila, navlači se na kružni nosač. Mogućnost dodavanja još tila za veću gustinu.</p>
+          <span class="price">5.000 din</span></div>
+      </a>
+      <a class="card" href="#cenovnik">
+        <div class="media"><img src="img/DcYQNFQNvZB.jpg" alt="Peškiri sa kapuljačom u dezenu"></div>
+        <div class="body"><h3>Peškir sa kapuljačom</h3><p class="desc">Od kvalitetnog frotira, ivice i kapuljača sa ušima u dezenu koji izaberete. 80×80 ili 100×100 cm.</p>
+          <span class="price"><small>od</small>1.400 din</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="feature">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Tedi gnezdo</span>
+      <h2>Udobnost i nežnost <span class="script">za prve dane</span></h2>
+      <p class="lead">„Svako gnezdo izrađujem s puno pažnje, da bi vašoj bebi pružilo sigurnost, toplinu i miran san.“ Radim ga u 3 kombinacije i 2 veličine, do 6 meseci i do 9/12 meseci.</p>
+      <div class="combos">
+        <div class="combo"><img src="img/Dc21a0vDV5I.jpg" alt=""><div><b>Skroz tedi 🐻</b><small>premekan</small></div><div class="p">5.400 din<small>/ 6.000</small></div></div>
+        <div class="combo"><img src="img/Dc21a0vDV5I_02.jpg" alt=""><div><b>Tedi i pamučno platno</b><small>bilo koji jednobojni ili dezen</small></div><div class="p">4.900 din<small>/ 5.500</small></div></div>
+        <div class="combo"><img src="img/Dc21a0vDV5I_03.jpg" alt=""><div><b>Tedi i muslin gaza</b><small>„Savršenstvo“ 😍</small></div><div class="p">5.700 din<small>/ 6.300</small></div></div>
+      </div>
+      <a class="btn btn-dark" href="tedi-gnezdo.html">Složi svoje gnezdo →</a>
+    </div>
+    <div class="feature-art">
+      <img class="tall" src="img/tedi-gnezdo-cenovnik.jpg" alt="Tedi gnezdo sa jastukom meda">
+      <img src="img/Dc21a0vDV5I.jpg" alt="Skroz tedi gnezdo sa mašnom">
+      <img src="img/Dc21a0vDV5I_02.jpg" alt="Tedi gnezdo sa bež unutrašnjošću">
+    </div>
+  </div>
+</section>
+
+<section class="block" id="cenovnik">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Cenovnik</span><h2>Sve cene <span class="script">na jednom mestu</span></h2></div>
+      <p>Najčešće radim po meri, ali standardne veličine su dostupne. Ako vam treba nešto što ne vidite ovde, pišite mi.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="on" data-t="gnezda" role="tab">Gnezda</button>
+      <button data-t="pletenice" role="tab">Pletenice i ogradice</button>
+      <button data-t="posteljina" role="tab">Posteljina</button>
+      <button data-t="prekrivaci" role="tab">Prekrivači i peškiri</button>
+      <button data-t="jastuci" role="tab">Jastuci i baldahin</button>
+    </div>
+
+    <div class="pricelist on" id="t-gnezda">
+      <div class="plist"><h3>Tedi gnezdo</h3><p class="sub">do 6 meseci / do 9/12 meseci · uz gnezdo jastuk meda</p><ul>
+        <li><span>Skroz tedi</span><b>5.400 / 6.000 din</b></li>
+        <li><span>Tedi i dezen ili jednobojno platno</span><b>4.900 / 5.500 din</b></li>
+        <li><span>Tedi i četvoroslojni muslin</span><b>5.700 / 6.300 din</b></li></ul></div>
+      <div class="plist"><h3>Gnezdo od pletenine</h3><p class="sub">do 6 meseci / do 9/12 meseci</p><ul>
+        <li><span>Gnezdo od pletenine</span><b>4.300 / 4.600 din</b></li>
+        <li><span>Doplata za karnere (malo / veliko)</span><b>+300 / +500 din</b></li>
+        <li><span>Mašna</span><b>+200 din</b></li></ul></div>
+      <div class="plist"><h3>Standardni model gnezda</h3><p class="sub">ležište se izvlači radi lakšeg održavanja i ima svoju navlaku</p><ul>
+        <li><span>Malo, do 6 meseci (65×30 cm)</span><b>3.500 din</b></li>
+        <li><span>Veliko, do 9–12 meseci (85×35 cm)</span><b>3.800 din</b></li></ul></div>
+      <div class="plist"><h3>Gnezdo model 2u1</h3><p class="sub">obod se rajfešlusom odvaja i postaje jastuk valjak ili ogradica</p><ul>
+        <li><span>Malo, do 6 meseci (obod ≈185 cm)</span><b>3.800 din</b></li>
+        <li><span>Veliko, do 9–12 meseci (obod ≈240 cm)</span><b>4.100 din</b></li></ul></div>
+    </div>
+
+    <div class="pricelist" id="t-pletenice">
+      <div class="plist"><h3>Pletenice</h3><p class="sub">bebi pliš ili pamuk sa elastinom / od pamučne pletenine</p><ul>
+        <li><span>120 cm</span><b>2.000 / 2.200 din</b></li>
+        <li><span>180 cm</span><b>3.000 / 3.300 din</b></li>
+        <li><span>220 cm</span><b>3.700 / 4.000 din</b></li>
+        <li><span>240 cm</span><b>4.000 / 4.300 din</b></li>
+        <li><span>300 cm</span><b>5.000 / 5.400 din</b></li>
+        <li><span>360 cm</span><b>6.000 / 6.500 din</b></li></ul></div>
+      <div class="plist"><h3>Četvorostruke pletenice</h3><p class="sub">pamučne, punjene silikonskim vlaknom</p><ul>
+        <li><span>120 cm</span><b>3.200 din</b></li><li><span>180 cm</span><b>4.800 din</b></li>
+        <li><span>220 cm</span><b>5.800 din</b></li><li><span>240 cm</span><b>6.400 din</b></li>
+        <li><span>300 cm</span><b>8.000 din</b></li><li><span>360 cm</span><b>9.000 din</b></li></ul></div>
+      <div class="plist"><h3>Ogradice za krevetac</h3><p class="sub">mogućnost izrade u svim dimenzijama, po vašim merama</p><ul>
+        <li><span>Ravna ogradica (3 strane krevetca)</span><b>2.500 din</b></li>
+        <li><span>Ravna ogradica sa karnerima</span><b>3.200 din</b></li>
+        <li><span>Ravna ogradica sa navlakama</span><b>3.500 din</b></li>
+        <li><span>Ravna ogradica sa navlakama i karnerima</span><b>3.900 din</b></li>
+        <li><span>Ogradica od 8 jastučića</span><b>3.400 din</b></li>
+        <li><span>Ogradica punjena od 4–5 jastuka sa karnerima</span><b>3.800 din</b></li>
+        <li><span>Ogradica 8 jastuka sa 8 navlaka</span><b>4.300 din</b></li>
+        <li><span>Ogradica od 8 jastučića sa navlakama</span><b>4.900 din</b></li></ul></div>
+    </div>
+
+    <div class="pricelist" id="t-posteljina">
+      <div class="plist"><h3>Čaršav sa lastisom</h3><p class="sub">pamučno platno · jednobojni / dezen</p><ul>
+        <li><span>120×60×20 cm</span><b>1.100 / 1.300 din</b></li>
+        <li><span>140×70×20 cm</span><b>1.300 / 1.400 din</b></li>
+        <li><span>160×80×20 cm</span><b>1.400 / 1.500 din</b></li>
+        <li><span>190×80×20 cm</span><b>1.600 / 1.700 din</b></li>
+        <li><span>200×90×20 cm</span><b>1.700 / 1.900 din</b></li></ul></div>
+      <div class="plist"><h3>Okrugli i ovalni krevetac</h3><p class="sub">okrugli 70 cm / ovalni 120×70 cm</p><ul>
+        <li><span>Jednobojni / dezen</span><b>1.100 / 1.600 din</b></li>
+        <li><span>Muslin gaza</span><b>1.600 / 2.050 din</b></li>
+        <li><span>Nepromočiva podloga</span><b>1.300 / 1.750 din</b></li></ul></div>
+      <div class="plist"><h3>Jastučnice</h3><p class="sub">pamučno platno, dezeni i jednobojno</p><ul>
+        <li><span>30×40 cm</span><b>400 din</b></li><li><span>40×40 cm</span><b>450 din</b></li>
+        <li><span>60×40 cm</span><b>550 din</b></li><li><span>50×70 cm</span><b>650 din</b></li>
+        <li><span>60×80 cm</span><b>700 din</b></li></ul></div>
+      <div class="plist"><h3>Jorganske navlake</h3><p class="sub">radim i u većim dimenzijama po porudžbini</p><ul>
+        <li><span>80×60 cm</span><b>800 din</b></li><li><span>100×80 cm</span><b>1.200 din</b></li>
+        <li><span>80×120 cm</span><b>1.350 din</b></li></ul></div>
+    </div>
+
+    <div class="pricelist" id="t-prekrivaci">
+      <div class="plist"><h3>Prekrivači 75×100 cm</h3><p class="sub">po meri i u bojama i dezenima po vašoj želji</p><ul>
+        <li><span>Letnji, jednoslojna pletenina</span><b>1.100 din</b></li>
+        <li><span>Minki bobice + dezen</span><b>1.600 din</b></li>
+        <li><span>Pletenina + jednobojna pelena</span><b>1.800 din</b></li>
+        <li><span>Pletenina + dezen</span><b>1.800 din</b></li>
+        <li><span>Wafl soft + dezen</span><b>1.800 din</b></li>
+        <li><span>Dupla pletenina</span><b>1.900 din</b></li>
+        <li><span>Minki pruge + meki somot</span><b>2.200 din</b></li>
+        <li><span>Doplata za vez imena</span><b>+200 din</b></li></ul></div>
+      <div class="plist"><h3>Zimsko ćebence sa vezom</h3><p class="sub">75×100 cm · vez po želji uračunat u cenu</p><ul>
+        <li><span>Jesenja akcija</span><b>2.000 din</b></li>
+        <li><span>Redovna cena</span><b>od 2.400 din</b></li></ul>
+        <h3 style="margin-top:22px">Peškir sa kapuljačom</h3><p class="sub">kvalitetan frotir, kapuljača sa ušima</p><ul>
+        <li><span>80×80 cm</span><b>1.400 din</b></li>
+        <li><span>100×100 cm</span><b>1.700 din</b></li>
+        <li><span>Doplata za vez imena</span><b>+200 din</b></li></ul></div>
+    </div>
+
+    <div class="pricelist" id="t-jastuci">
+      <div class="plist"><h3>Ravan bebi jastuk</h3><p class="sub">30×40 cm</p><ul>
+        <li><span>Beli / u dezenu</span><b>400 / 450 din</b></li>
+        <li><span>Sa ušima mede</span><b>550 din</b></li>
+        <li><span>Anatomski meda jastuk</span><b>650 din</b></li>
+        <li><span>Sa ušima zeke</span><b>650 din</b></li></ul></div>
+      <div class="plist"><h3>Dekorativni jastuci</h3><p class="sub">pamučno platno (ranfros) / bebi pliš</p><ul>
+        <li><span>Jastuk bombona 65 cm</span><b>600 / 1.000 din</b></li>
+        <li><span>Jastuk oblak 60 cm</span><b>1.100 / 1.200 din</b></li>
+        <li><span>Jastuk zvezda · jastuk srce</span><b>900 / 1.200 din</b></li>
+        <li><span>Jastuk oblak sa detaljima (pliš)</span><b>1.700 din</b></li>
+        <li><span>Jastuk leptir (pliš)</span><b>1.500 din</b></li>
+        <li><span>Doplata za vez</span><b>od 200 din</b></li></ul></div>
+      <div class="plist"><h3>Baldahin od tila</h3><p class="sub">cena se odnosi samo na baldahin, nosač se kupuje posebno</p><ul>
+        <li><span>Baldahin od tila</span><b>5.000 din</b></li></ul></div>
+    </div>
+    <p class="pl-note">Cene su iz cenovnika Slatki snovi na Instagramu. Poštarina se plaća posebno, osim za porudžbine od 15.000 din uz uplatu pre slanja.</p>
+  </div>
+</section>
+
+<section class="night">
+  <div class="sky" aria-hidden="true"><i style="top:18%;left:8%">✦</i><i style="top:62%;left:14%;font-size:12px">✦</i><i style="top:30%;right:22%;font-size:13px">✦</i><i style="bottom:14%;right:10%">✦</i><i style="top:12%;left:40%;font-size:10px">✦</i></div>
+  <svg class="bigmoon" viewBox="0 0 100 100" aria-hidden="true"><path d="M62 8a42 42 0 1 0 30 62A36 36 0 0 1 62 8z" fill="#f2c3a0"/></svg>
+  <div class="wrap">
+    <span class="eyebrow">Slatki snovi · handmade by Jelena</span>
+    <blockquote>Hvala što birate domaće <em>i sa ljubavlju</em></blockquote>
+    <p>Svaki proizvod šijem ručno, po porudžbini, u dimenzijama vašeg krevetca i u dezenu koji izaberete. Posteljine radim i za stariju decu i za odrasle, a po dogovoru i nepromočive podloge po meri. Ako ste iz Zrenjanina ili okoline, možete posetiti i moju radionicu.</p>
+  </div>
+</section>
+
+<section class="block patterns" id="dezeni">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Dezeni</span>
+      <h2 style="font-size:clamp(36px,4.4vw,56px);margin-top:10px">Dezeni za posteljine, gnezda <span class="script">i sve ostalo</span></h2>
+      <p style="color:var(--muted);margin:16px 0 30px;max-width:46ch">Ne stižem uvek da ažuriram album. Svaki put kad mi se javite u poruci, potvrdim vam da li željenog dezena ima dovoljno za vašu porudžbinu 🍀</p>
+      <a class="btn btn-ghost" href="tedi-gnezdo.html#dezen">Izaberi dezen za tedi gnezdo →</a>
+    </div>
+    <div class="pat-grid">
+      <div class="pat"><img src="img/dezeni/sumske-zivotinje.jpg" alt="Dezen šumske životinje"><span>Šumske životinje</span></div>
+      <div class="pat"><img src="img/dezeni/nezno-lane.jpg" alt="Dezen nežno lane"><span>Nežno lane</span></div>
+      <div class="pat"><img src="img/dezeni/srne-i-veverice.jpg" alt="Dezen srne i veverice"><span>Srne i veverice</span></div>
+      <div class="pat"><img src="img/dezeni/meda-i-lisica.jpg" alt="Dezen meda i lisica"><span>Meda i lisica</span></div>
+      <div class="pat"><img src="img/dezeni/duge.jpg" alt="Dezen duge"><span>Duge</span></div>
+      <div class="pat"><img src="img/dezeni/balerine.jpg" alt="Dezen balerine"><span>Balerine</span></div>
+      <div class="pat"><img src="img/dezeni/bombone.jpg" alt="Dezen bombone"><span>Bombone</span></div>
+      <div class="pat"><img src="img/dezeni/satori.jpg" alt="Dezen šatori"><span>Šatori</span></div>
+      <div class="pat"><img src="img/dezeni/pera-i-srca.jpg" alt="Dezen pera i srca"><span>Pera i srca</span></div>
+      <div class="pat"><img src="img/dezeni/zlatne-tackice.jpg" alt="Dezen zlatne tačkice"><span>Zlatne tačkice</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="utisci" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Utisci</span><h2>Kad paket <span class="script">stigne</span></h2></div>
+      <p>Poruke koje ste mi poslali kad je paket stigao, iz Instagram highlight-a „Utisci“.</p>
+    </div>
+    <div class="reviews">
+      <div class="review big"><div class="bubble">Ovo su stvarno Slatki snovi 😍</div><div class="who"><i></i><span><b>Poruka kupca</b></span></div></div>
+      <div class="review">
+        <div class="bubble">Stigla je posteljina. Fenomenalna je. Bas, bas, bas je lepa 🥰 boja fenomenalna.</div>
+        <div class="bubble">Divne ste. Nadamo se buducij saradnji. Sve pohvale 🤗🥰</div>
+        <div class="who"><i></i><span><b>Poruka kupca</b> · posteljina</span></div></div>
+      <div class="review">
+        <div class="bubble">Stiglo je gnezdo i jastucici.</div>
+        <div class="bubble">Jeste. Prelepo je. Prezadovoljna sam. Moj sestric ce uzivati u gnezdu.</div>
+        <div class="who"><i></i><span><b>Poruka kupca</b> · gnezdo</span></div></div>
+      <div class="review"><div class="bubble">Posteljina je prelepa. Kvalitetna, sasiveno je sa paznjom, svaka cast.</div><div class="who"><i></i><span><b>Poruka kupca</b> · posteljina</span></div></div>
+      <div class="review"><div class="bubble">Stigao je prekrivac, bajkovit je 😘 Divno 💙</div><div class="who"><i></i><span><b>Poruka kupca</b> · prekrivač</span></div></div>
+      <div class="review"><div class="bubble">Stigla je posiljka, preslatko je, hvala na pokloncu, bas sam se odusevila!!!! Sigurna sam da ce mali Petar uzivati u svome gnezdu, pozdrav ❤️</div><div class="who"><i></i><span><b>Poruka kupca</b> · gnezdo</span></div></div>
+      <div class="review"><div class="bubble">Savršeno. Kvalitetno sašiveno sa puno pažnje. Hvala za poklon</div><div class="who"><i></i><span><b>Poruka kupca</b> · poklon</span></div></div>
+      <div class="review"><div class="bubble">Stigla je posteljina, prelepa je 😍</div><div class="who"><i></i><span><b>Tamara</b> · posteljina</span></div></div>
+      <div class="review"><div class="bubble">Stigao je paket. Toliko je divno, preslatko. Odusevljena sam.</div><div class="who"><i></i><span><b>Poruka kupca</b></span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block order" id="porucivanje" style="padding-top:0">
+  <div class="wrap">
+    <div>
+      <div class="sec-head" style="margin-bottom:28px"><div><span class="eyebrow">Poručivanje</span><h2>Kako da poručite <span class="script">od mene</span></h2></div></div>
+      <ol class="steps">
+        <li><div><b>Pošaljite mi sliku željenog modela</b><span>U poruci, zajedno sa dimenzijama i dezenom. Proverite dimenzije kreveta.</span></div></li>
+        <li><div><b>Poručite koji god želite proizvod</b><span>Niste ograničeni na komplet, već svojim željama i potrebama sami formirate komplet koji vam odgovara.</span></div></li>
+        <li><div><b>Napomenite ako želite vez</b><span>Na svim proizvodima je moguće odraditi vez, ali morate to napomenuti pri poručivanju.</span></div></li>
+        <li><div><b>Ostavite svoje podatke i uplatite kaparu</b><span>Ime i prezime, adresu, mesto i broj telefona. Uz porudžbinu do 5.000 din kapara je minimum 1.000 din; posle uplate porudžbina ulazi u izradu i ne može se više menjati.</span></div></li>
+      </ol>
+    </div>
+    <div class="ship">
+      <h3>Izrada i dostava</h3>
+      <ul>
+        <li><b>Rok za izradu je 10–15 radnih dana.</b> Nemojte da čekate poslednji trenutak, i sebe i mene izlažete bespotrebnom stresu!</li>
+        <li><b>Dostava širom Srbije</b>, paketi idu preko Pošte kao CC paket. Poštarina zavisi od težine i visine otkupa, kreće se od 500 do 1.000 din.</li>
+        <li><b>Besplatna dostava od 15.000 din</b>, kada iznos otkupa uplatite pre slanja. Za manje porudžbine troškove dostave snosi kupac.</li>
+        <li>Da bi poštarina bila manja, otkupninu možete uplatiti pre slanja. Uplatu može izvršiti i neko umesto vas, samo mi javite ime i prezime.</li>
+        <li>Poručivanje je moguće i putem Facebook-a ili e-maila, a iz Zrenjanina i okoline možete svratiti i u radionicu.</li>
+      </ul>
+      <a class="btn" style="background:var(--peach);border-color:var(--peach);color:var(--ink);margin-top:24px;width:100%" href="https://ig.me/m/slatkisnovi.made.by.jelena" target="_blank" rel="noopener">Pišite mi u DM 💌</a>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">@slatkisnovi.made.by.jelena</span><h2>Presladak, premekan <span class="script">i neodoljiv</span></h2></div>
+      <a class="btn btn-ghost" href="https://www.instagram.com/slatkisnovi.made.by.jelena/" target="_blank" rel="noopener">Pratite me na Instagramu</a>
+    </div>
+    <div class="ig-grid">
+      <a href="https://www.instagram.com/p/Dds4McJNFgC/" target="_blank" rel="noopener"><img src="img/Dds4McJNFgC.jpg" alt="Plavi kompletić od pletenine u krevecu"></a>
+      <a href="https://www.instagram.com/p/Dd0pnL4Nra2/" target="_blank" rel="noopener"><img src="img/Dd0pnL4Nra2.jpg" alt="Roze kompletić sa jastukom srcem i labudom"></a>
+      <a href="https://www.instagram.com/p/DdrIQHMt6ku/" target="_blank" rel="noopener"><img src="img/DdrIQHMt6ku.jpg" alt="Personalizovane jastučnice za vrtić"></a>
+      <a href="https://www.instagram.com/p/DdJhfJ7NdiI/" target="_blank" rel="noopener"><img src="img/DdJhfJ7NdiI.jpg" alt="Posteljina za prenosivu kolevku"></a>
+      <a href="https://www.instagram.com/p/Dc8dYB-jWcQ/" target="_blank" rel="noopener"><img src="img/Dc8dYB-jWcQ.jpg" alt="Jastučići sa imenom za decu"></a>
+      <a href="https://www.instagram.com/p/DdiprEMtYRq/" target="_blank" rel="noopener"><img src="img/DdiprEMtYRq.jpg" alt="Tedi jastuk oblak sa natpisom"></a>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" style="justify-content:center;text-align:center"><div><span class="eyebrow">Pitanja</span><h2>Česta pitanja</h2></div></div>
+    <div class="faq">
+      <details open><summary>Da li radite posteljine po posebnim dimenzijama?</summary><p>Da. Radim posteljine za sve vrste krevetaca i kolevki, okrugle i ovalne krevece, prenosive kolevke, ali i za stariju decu i odrasle, po dimenzijama vašeg kreveta. Ako vam treba posteljina po posebnim dimenzijama, onda ste na pravom mestu 🥰</p></details>
+      <details><summary>Koliko traje izrada?</summary><p>Sve radim po porudžbini, a rok za izradu je 10–15 radnih dana od uplate kapare. Ako dinamika posla dozvoljava, porudžbina će biti i ranije spremna, ali je svakako planirajte na vreme.</p></details>
+      <details><summary>Zašto se uplaćuje kapara?</summary><p>Uz svaku porudžbinu do 5.000 din uplaćuje se kapara od minimum 1.000 din, a za veće porudžbine iznos zavisi od ukupnog iznosa. Ako se desi nešto na šta ne možemo da utičemo ni vi ni ja, novac vam se vraća.</p></details>
+      <details><summary>Koliko košta dostava?</summary><p>Pakete šaljem preko Pošte kao CC paket. Poštarina zavisi od težine i visine otkupa i kreće se od 500 do 1.000 din. Za porudžbine od 15.000 din dostava je besplatna, ako iznos uplatite pre slanja.</p></details>
+      <details><summary>Da li mogu da dobijem vez imena?</summary><p>Na svim proizvodima je moguće odraditi vez, samo to napomenite pri poručivanju. Za prekrivače i peškire doplata za vez imena je 200 din, a kod zimskog ćebenceta vez je uračunat u cenu.</p></details>
+      <details><summary>Kako se pere?</summary><p>Četvorostruke pletenice peru se do 40 stepeni i ne preporučuje se sušenje u mašini. Za ostale proizvode pitajte me u poruci, rado ću vam objasniti.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="logo" href="index.html"><img src="img/logo.jpg" alt=""><span><b>Slatki snovi</b><small>handmade by Jelena</small></span></a>
+        <p style="margin-top:16px;font-size:14px;max-width:34ch">✨ Ljubav, kvalitet i sigurnost u svakom detalju. Ručno rađeni proizvodi, dostava širom Srbije.</p></div>
+      <div><h4>Prodavnica</h4><ul><li><a href="tedi-gnezdo.html">Tedi gnezdo</a></li><li><a href="#ponuda">Gnezda za bebe</a></li><li><a href="#ponuda">Posteljine po meri</a></li><li><a href="#ponuda">Pletenice i ogradice</a></li><li><a href="#ponuda">Prekrivači</a></li></ul></div>
+      <div><h4>Pomoć</h4><ul><li><a href="#porucivanje">Poručivanje</a></li><li><a href="#porucivanje">Izrada i dostava</a></li><li><a href="#cenovnik">Cenovnik</a></li><li><a href="#dezeni">Dezeni</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul><li><a href="https://www.instagram.com/slatkisnovi.made.by.jelena/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://ig.me/m/slatkisnovi.made.by.jelena" target="_blank" rel="noopener">Poručivanje u DM 💌</a></li><li><a href="https://www.facebook.com/slatkisnovi.handmadebyjelena/" target="_blank" rel="noopener">Facebook</a></li><li><a href="mailto:slatkisnovi.handmadebyjelena@gmail.com">slatkisnovi.handmadebyjelena@gmail.com</a></li><li><a href="https://wa.me/381062275265" target="_blank" rel="noopener">WhatsApp 062 275 265</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Slatki snovi Handmade by Jelena · Jelena Macut Magda PR</span><span>Cene iz cenovnika brenda · poštarina nije uračunata · Zrenjanin, Srbija</span></div>
+  </div>
+</footer>
+<script>
+/* cenovnik tabs */
+document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});
+  document.querySelectorAll('.pricelist').forEach(function(p){p.classList.toggle('on',p.id==='t-'+b.dataset.t)});
+})});
+</script>
+<script>
+/* mobile menu: collects the header's nav links into one dropdown */
+(function(){var h=document.querySelector('header.site'),b=h&&h.querySelector('.menu-btn');if(!b)return;
+var p=document.createElement('nav');p.className='mobile-nav';p.setAttribute('aria-label','Meni');
+h.querySelectorAll('nav.main a').forEach(function(a){var c=a.cloneNode(true);c.removeAttribute('class');p.appendChild(c)});
+p.style.background=getComputedStyle(document.body).backgroundColor;h.appendChild(p);
+b.addEventListener('click',function(){var o=h.classList.toggle('menu-open');b.setAttribute('aria-expanded',o)});
+p.addEventListener('click',function(e){if(e.target.closest('a')){h.classList.remove('menu-open');b.setAttribute('aria-expanded','false')}});})();
+</script>
+</body>
+</html>

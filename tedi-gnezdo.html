@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tedi gnezdo za bebe · Slatki snovi Handmade by Jelena</title>
+<meta name="description" content="Tedi gnezdo u 3 kombinacije (skroz tedi, tedi i pamučno platno, tedi i muslin gaza) i 2 veličine, do 6 i do 9/12 meseci. Uz gnezdo jastuk meda. Ručno rađeno po porudžbini.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600;700;800&family=Parisienne&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f6f3ee; --paper:#fffaf6; --peach:#f2c3a0; --peach-soft:#fbe9dc; --peach-deep:#b8683f;
+  --blush:#f4abbc; --blush-soft:#fbe8ec; --taupe:#e4d8cc; --ink:#3a2c28; --muted:#7d6c65; --line:#eadfd5;
+  --night:#342a38;
+  --radius:26px; --shadow:0 18px 40px -22px rgba(58,44,40,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Mulish",system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,textarea{font:inherit;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.05;letter-spacing:-.01em}
+.script{font-family:"Parisienne",cursive;font-weight:400;color:var(--peach-deep);letter-spacing:0}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--peach-deep)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:15px 28px;border-radius:999px;font-weight:800;font-size:15px;border:1.5px solid var(--ink);transition:transform .15s,background .15s,color .15s;cursor:pointer;text-align:center}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--peach-deep);border-color:var(--peach-deep);transform:translateY(-2px)}
+.btn-ghost{background:transparent}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+
+header.site{position:sticky;top:0;z-index:50;background:rgba(246,243,238,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;line-height:1}
+.logo img{width:50px;height:50px;border-radius:50%;border:1px solid var(--line)}
+.logo b{font-family:"Cormorant Garamond",serif;font-size:25px;font-weight:600;display:block}
+.logo small{font-family:"Parisienne",cursive;font-size:17px;color:var(--peach-deep)}
+nav.main{display:flex;gap:28px;font-weight:700;font-size:14.5px}
+nav.main a{position:relative;padding:4px 0}
+nav.main a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--peach);transition:width .2s}
+nav.main a:hover::after,nav.main a.on::after{width:100%}
+.icons{display:flex;gap:10px;align-items:center}
+.icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1.5px solid var(--line);background:var(--paper);position:relative;cursor:pointer}
+.icon-btn svg{width:19px;height:19px;stroke:var(--ink);fill:none;stroke-width:2}
+.badge{position:absolute;top:-4px;right:-4px;background:var(--peach-deep);color:#fff;font-size:11px;font-weight:800;min-width:19px;height:19px;border-radius:10px;display:grid;place-items:center;transition:transform .2s}
+.badge.bump{transform:scale(1.35)}
+.menu-btn{display:none}
+
+.crumbs{display:flex;gap:10px;font-size:13px;color:var(--muted);font-weight:700;padding:22px 0}
+.crumbs a:hover{color:var(--peach-deep)}
+
+.product{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:start;padding-bottom:80px}
+.gallery{position:sticky;top:96px;display:grid;grid-template-columns:78px 1fr;gap:14px}
+.thumbs{display:flex;flex-direction:column;gap:10px}
+.thumbs button{border:2px solid transparent;border-radius:16px;overflow:hidden;padding:0;cursor:pointer;aspect-ratio:1;background:var(--paper)}
+.thumbs button.on{border-color:var(--peach-deep)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.stage{position:relative;border-radius:260px 260px var(--radius) var(--radius);overflow:hidden;aspect-ratio:4/5;background:var(--taupe);box-shadow:var(--shadow)}
+.stage img{width:100%;height:100%;object-fit:cover;transition:opacity .16s}
+.tag{position:absolute;bottom:18px;left:18px;background:var(--ink);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px;z-index:2}
+
+.info h1{font-size:clamp(46px,5vw,68px);margin:10px 0 10px}
+.rating{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--muted);font-weight:700}
+.rating .hearts{color:var(--blush);letter-spacing:2px}
+.pricebox{display:flex;align-items:baseline;gap:12px;margin:20px 0 6px;flex-wrap:wrap}
+.pricebox .now{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:44px;line-height:1}
+.pricebox .note{font-size:13px;color:var(--muted);font-weight:700}
+.intro{color:var(--muted);font-size:16.5px;margin:14px 0 6px;max-width:52ch}
+.gift{display:flex;gap:12px;align-items:center;background:var(--peach-soft);border-radius:18px;padding:12px 16px;margin-top:16px;font-size:14.5px}
+.gift b{font-weight:800}
+
+.opt{margin-top:28px}
+.opt-head{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:15px;margin-bottom:12px;gap:12px}
+.opt-head .count{font-size:13px;font-weight:800;color:var(--peach-deep);background:var(--peach-soft);padding:4px 12px;border-radius:999px;white-space:nowrap}
+.combos{display:grid;gap:10px}
+.combo{display:grid;grid-template-columns:58px 1fr auto;gap:14px;align-items:center;border:1.5px solid var(--line);border-radius:20px;background:var(--paper);padding:9px 16px 9px 9px;cursor:pointer;text-align:left;transition:border-color .15s,background .15s}
+.combo img{width:58px;height:58px;border-radius:14px;object-fit:cover}
+.combo b{display:block;font-size:15.5px}
+.combo small{color:var(--muted);font-size:13px}
+.combo .p{font-weight:800;font-size:14px;white-space:nowrap}
+.combo.on{border-color:var(--ink);background:var(--peach-soft);box-shadow:inset 0 0 0 1px var(--ink)}
+.sizes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.size{border:1.5px solid var(--line);border-radius:20px;background:var(--paper);padding:14px 10px;cursor:pointer;text-align:center;transition:border-color .15s,background .15s}
+.size b{display:block;font-family:"Cormorant Garamond",serif;font-weight:600;font-size:24px;line-height:1.1}
+.size small{color:var(--muted);font-size:12.5px;font-weight:700}
+.size.on{border-color:var(--ink);background:var(--peach-soft);box-shadow:inset 0 0 0 1px var(--ink)}
+
+.pats{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.patb{position:relative;border:0;padding:0;border-radius:14px;overflow:hidden;aspect-ratio:1;cursor:pointer;background:var(--paper);box-shadow:0 0 0 1.5px var(--line);transition:transform .12s,box-shadow .12s}
+.patb img{width:100%;height:100%;object-fit:cover}
+.patb.plain{background:linear-gradient(135deg,#efe6dc,#e4d8cc);font-size:11px;font-weight:800;color:var(--ink)}
+.patb:hover{transform:translateY(-2px)}
+.patb.on{box-shadow:0 0 0 3px var(--peach-deep)}
+.patb.on::after{content:"✓";position:absolute;top:4px;right:4px;width:20px;height:20px;border-radius:50%;background:var(--peach-deep);color:#fff;font-size:12px;font-weight:800;display:grid;place-items:center}
+.picked{margin-top:10px;font-size:14px;font-weight:700}
+.picked em{font-style:normal;color:var(--muted);font-weight:600}
+.hint{font-size:13px;color:var(--muted);margin-top:8px}
+
+.vez{display:flex;gap:12px;align-items:center;border:1.5px solid var(--line);border-radius:18px;background:var(--paper);padding:14px 16px;cursor:pointer}
+.vez input[type=checkbox]{width:20px;height:20px;accent-color:var(--peach-deep);flex:0 0 20px}
+.vez .t{flex:1}
+.vez .t b{display:block;font-size:15px}
+.vez .t small{color:var(--muted);font-size:13px}
+.vez:has(input:checked){border-color:var(--ink);background:var(--peach-soft)}
+.field{width:100%;border:1.5px solid var(--line);border-radius:16px;background:var(--paper);padding:12px 16px;outline:0;font-size:15px;margin-top:10px}
+.field:focus{border-color:var(--peach)}
+textarea.field{min-height:84px;resize:vertical}
+#vezName{display:none}
+#vezName.show{display:block}
+
+.buy{display:flex;gap:12px;margin-top:28px}
+.buy .btn{flex:1}
+.dm{width:100%;margin-top:10px}
+.dm-note{font-size:13px;color:var(--muted);text-align:center;margin-top:8px}
+
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+.perk{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px 10px;text-align:center;font-size:13px;font-weight:800}
+.perk span{display:block;font-size:22px;margin-bottom:4px}
+
+.acc{margin-top:28px;border-top:1px solid var(--line)}
+.acc details{border-bottom:1px solid var(--line);padding:18px 0;overflow:hidden}
+.acc summary{cursor:pointer;list-style:none;font-family:"Cormorant Garamond",serif;font-weight:600;font-size:23px;display:flex;justify-content:space-between;gap:12px}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"+";font-family:"Mulish";font-weight:800;font-size:22px;color:var(--peach-deep);transition:transform .2s;flex:0 0 auto}
+.acc details[open] summary::after{transform:rotate(45deg)}
+.acc .inner{color:var(--muted);margin-top:10px;font-size:15px}
+.acc .inner p + p{margin-top:8px}
+.acc ul{padding-left:18px;display:grid;gap:6px}
+.acc table{width:100%;border-collapse:collapse;font-size:14.5px}
+.acc td,.acc th{padding:8px 4px;border-bottom:1px dotted var(--taupe);text-align:left}
+.acc th{color:var(--ink);font-weight:800}
+.acc td:last-child,.acc th:last-child{text-align:right;white-space:nowrap}
+
+section.block{padding:90px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(34px,4.2vw,54px);margin-top:10px}
+.sec-head p{color:var(--muted);max-width:46ch}
+
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trio figure{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.trio img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.trio figcaption{padding:16px 18px 20px}
+.trio figcaption b{font-family:"Cormorant Garamond",serif;font-size:25px;font-weight:600;display:block;line-height:1.1}
+.trio figcaption span{color:var(--muted);font-size:14px}
+.trio figcaption i{font-style:normal;font-weight:800;display:block;margin-top:6px}
+
+.revs{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.rev{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.rev .bubble{background:var(--blush-soft);border-radius:20px 20px 20px 6px;padding:14px 16px;font-size:15.5px;line-height:1.5}
+.rev .bubble + .bubble{margin-top:8px}
+.rev .who{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:13px;color:var(--muted);font-weight:700}
+.rev .who i{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--peach),var(--blush))}
+.rev .who b{color:var(--ink)}
+
+.related{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--paper);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.card .media{aspect-ratio:4/5;overflow:hidden}
+.card .media img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:16px 18px 20px}
+.card h3{font-size:24px;margin-bottom:4px}
+.price{font-weight:800;font-size:16px}
+.price small{font-weight:700;color:var(--muted);font-size:12px;margin-right:4px}
+.price s{color:var(--muted);font-weight:600;font-size:13px;margin-left:6px}
+
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,calc(100% + 40px));visibility:hidden;background:var(--ink);color:#fff;padding:14px 22px;border-radius:999px;font-size:14px;font-weight:700;z-index:90;transition:transform .3s;box-shadow:var(--shadow);max-width:calc(100% - 32px);text-align:center}
+.toast.show{transform:translate(-50%,0);visibility:visible}
+.sticky-buy{position:fixed;left:0;right:0;bottom:0;background:var(--paper);border-top:1px solid var(--line);padding:12px 16px;display:none;align-items:center;gap:12px;z-index:80;box-shadow:0 -10px 24px -18px rgba(0,0,0,.4)}
+.sticky-buy .t{flex:1;min-width:0}
+.sticky-buy .t small{display:block;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sticky-buy .t b{font-size:17px}
+.sticky-buy .btn{padding:12px 20px}
+
+footer{background:var(--night);color:#d8c9c3;padding:60px 0 28px;margin-top:40px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer .logo b{color:#fff}
+footer .logo small{color:var(--peach)}
+footer h4{color:#fff;font-family:"Cormorant Garamond",serif;font-size:22px;margin-bottom:14px;font-weight:600}
+footer li{list-style:none;margin:8px 0;font-size:14px}
+footer li a:hover{color:var(--peach)}
+footer .legal{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;font-size:13px;opacity:.7;flex-wrap:wrap;gap:12px}
+
+@media (max-width:1024px){
+  .related{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  nav.main{display:none}
+  .menu-btn{display:grid}
+  .product{grid-template-columns:1fr;gap:30px}
+  .gallery{position:static;grid-template-columns:1fr}
+  .thumbs{flex-direction:row;order:2;overflow-x:auto}
+  .thumbs button{flex:0 0 66px}
+  .trio,.revs{grid-template-columns:1fr}
+  .trio figure{display:grid;grid-template-columns:120px 1fr;align-items:center}
+  .trio img{height:100%;aspect-ratio:auto}
+  footer .cols{grid-template-columns:1fr}
+  .sticky-buy.show{display:flex}
+  section.block{padding:64px 0}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .logo small{display:none}
+  .icons a[aria-label=Pretraga]{display:none}
+  .logo b{font-size:22px}
+  .pats{grid-template-columns:repeat(4,1fr)}
+  .combo{grid-template-columns:50px 1fr;padding-right:12px}
+  .combo img{width:50px;height:50px}
+  .combo .p{grid-column:2}
+  .perk{font-size:12px;padding:12px 6px}
+  .related{grid-template-columns:1fr 1fr;gap:12px}
+  .card h3{font-size:20px}
+  .card .body{padding:12px 12px 16px}
+  .price{font-size:14px}
+}
+.mobile-nav{display:none}
+@media (max-width:860px){header.site.menu-open .mobile-nav{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;padding:8px 24px 18px;border-bottom:1px solid var(--line);box-shadow:0 14px 24px -18px rgba(0,0,0,.35)}.mobile-nav a{padding:13px 0;font-size:17px;border-bottom:1px solid var(--line)}.mobile-nav a:last-child{border-bottom:0}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/logo.jpg" alt="Slatki snovi logo"><span><b>Slatki snovi</b><small>handmade by Jelena</small></span></a>
+    <nav class="main" aria-label="Glavna navigacija">
+      <a class="on" href="tedi-gnezdo.html">Tedi gnezdo</a>
+      <a href="index.html#ponuda">Ponuda</a>
+      <a href="index.html#cenovnik">Cenovnik</a>
+      <a href="index.html#dezeni">Dezeni</a>
+      <a href="index.html#utisci">Utisci</a>
+      <a href="index.html#porucivanje">Poručivanje</a>
+    </nav>
+    <div class="icons">
+      <a class="icon-btn" href="#" aria-label="Pretraga"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" id="cartCount">0</span></a>
+      <button class="icon-btn menu-btn" aria-label="Meni" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <nav class="crumbs" aria-label="Putanja"><a href="index.html">Početna</a><span>/</span><a href="index.html#ponuda">Gnezda za bebe</a><span>/</span><span>Tedi gnezdo</span></nav>
+
+  <div class="product">
+    <div class="gallery">
+      <div class="thumbs" id="thumbs"></div>
+      <div class="stage"><span class="tag">Trenutno vaš omiljeni</span><img id="stageImg" src="img/Dc21a0vDV5I.jpg" alt="Tedi gnezdo"></div>
+    </div>
+
+    <div class="info">
+      <span class="eyebrow">Gnezdo za bebe · ručno rađeno</span>
+      <h1>Tedi gnezdo <span class="script">za prve dane</span></h1>
+      <div class="rating"><span class="hearts">♥♥♥♥♥</span><a href="#utisci" style="text-decoration:underline;text-underline-offset:3px">Pročitajte utiske</a></div>
+
+      <div class="pricebox"><span class="now" id="price">5.400 din</span><span class="note">cena iz cenovnika · poštarina posebno</span></div>
+      <p class="intro">Udobnost i nežnost za prve dane. Tedi gnezdo radim u 3 kombinacije i 2 veličine, a svako izrađujem s puno pažnje, da bi vašoj bebi pružilo sigurnost, toplinu i miran san.</p>
+      <div class="gift"><span style="font-size:24px">🧸</span><span><b>Uz gnezdo dobijate jastuk meda</b>, jedna strana tedi, druga pamuk.</span></div>
+
+      <div class="opt">
+        <div class="opt-head">1. Kombinacija</div>
+        <div class="combos" id="combos"></div>
+      </div>
+
+      <div class="opt">
+        <div class="opt-head">2. Veličina</div>
+        <div class="sizes" id="sizes"></div>
+      </div>
+
+      <div class="opt" id="dezen">
+        <div class="opt-head">3. Pamučno platno <span class="count" id="pickLabel">izaberite</span></div>
+        <div id="patBox">
+          <div class="pats" id="pats"></div>
+          <div class="picked" id="picked"></div>
+          <p class="hint">Dezeni iz albuma „Dostupni dezeni“. Kad mi se javite, potvrdiću vam da li željenog dezena ima dovoljno za vašu porudžbinu.</p>
+        </div>
+        <p class="hint" id="patOff" style="display:none">Ova kombinacija nema pamučno platno. Boje dogovaramo u poruci.</p>
+      </div>
+
+      <div class="opt">
+        <div class="opt-head">4. Vez imena <span style="font-weight:700;color:var(--muted);font-size:13px">po želji</span></div>
+        <label class="vez"><input type="checkbox" id="vezOn"><span class="t"><b>Dodaj vez imena</b><small>Na svim proizvodima je moguće odraditi vez. Doplatu za gnezdo potvrđujem u poruci.</small></span></label>
+        <input class="field" id="vezName" type="text" maxlength="30" placeholder="Ime koje vezem, npr. Vidak" aria-label="Ime za vez">
+      </div>
+
+      <div class="opt">
+        <div class="opt-head"><label for="note">5. Napomena</label></div>
+        <textarea class="field" id="note" placeholder="Npr. boja tedija, datum kada vam treba…"></textarea>
+      </div>
+
+      <div class="buy">
+        <button class="btn btn-dark" id="addBtn" type="button" onclick="addToCart()">Dodaj u korpu</button>
+      </div>
+      <button class="btn btn-ghost dm" type="button" onclick="sendDM()">Pošalji porudžbinu u DM 💌</button>
+      <p class="dm-note">Kopiram vašu porudžbinu, a vi je samo nalepite u poruku na Instagramu.</p>
+
+      <div class="perks">
+        <div class="perk"><span>🧵</span>Ručno rađeno</div>
+        <div class="perk"><span>🗓️</span>Izrada 10–15 radnih dana</div>
+        <div class="perk"><span>📦</span>Dostava širom Srbije</div>
+      </div>
+
+      <div class="acc">
+        <details open><summary>Opis</summary><div class="inner">
+          <p>Tedi gnezdo, trenutno vaš omiljeni proizvod. Skroz tedi je premekan, tedi sa pamučnim platnom može biti u bilo kom jednobojnom platnu ili dezenu, a tedi i muslin gaza su, kako Jelena kaže, savršenstvo 😍</p>
+          <p>Gnezdo dolazi sa jastukom meda: jedna strana je tedi, druga pamuk.</p>
+        </div></details>
+        <details><summary>Cene po kombinaciji</summary><div class="inner">
+          <table><tr><th>Kombinacija</th><th>do 6 m / do 9/12 m</th></tr>
+            <tr><td>Skroz tedi</td><td>5.400 / 6.000 din</td></tr>
+            <tr><td>Tedi i dezen ili jednobojno platno</td><td>4.900 / 5.500 din</td></tr>
+            <tr><td>Tedi i četvoroslojni muslin</td><td>5.700 / 6.300 din</td></tr></table>
+        </div></details>
+        <details><summary>Nega</summary><div class="inner"><p>Kupcu koji je pitao na koliko stepeni se gnezdo može prati, Jelena je odgovorila: „Na 30/40 stepeni. I ne preporučuje se sušenje u mašini za sušenje.“</p></div></details>
+        <details><summary>Izrada i dostava</summary><div class="inner"><ul>
+          <li>Rok za izradu je 10–15 radnih dana od uplate kapare.</li>
+          <li>Pakete šaljem preko Pošte kao CC paket, poštarina je od 500 do 1.000 din.</li>
+          <li>Za porudžbine od 15.000 din dostava je besplatna, uz uplatu pre slanja.</li>
+        </ul></div></details>
+        <details><summary>Kapara</summary><div class="inner"><p>Uz porudžbinu do 5.000 din uplaćuje se kapara od minimum 1.000 din, a za veće porudžbine iznos zavisi od ukupnog iznosa. Nakon uplate kapare porudžbina ulazi u izradu i ne može se više menjati.</p></div></details>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="block" style="background:var(--paper);border-radius:44px;margin:0 12px">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">3 kombinacije</span><h2>Koje je <span class="script">vaše?</span></h2></div><a class="btn btn-ghost" href="https://www.instagram.com/p/Dc21a0vDV5I/" target="_blank" rel="noopener">Pogledaj na Instagramu</a></div>
+    <div class="trio">
+      <figure><img src="img/Dc21a0vDV5I.jpg" alt="Skroz tedi gnezdo"><figcaption><b>Skroz tedi 🐻</b><span>Premekan i dostupan u 2 veličine, do 6 meseci i do 9/12 meseci.</span><i>od 5.400 din</i></figcaption></figure>
+      <figure><img src="img/Dc21a0vDV5I_02.jpg" alt="Tedi gnezdo sa pamučnim platnom"><figcaption><b>Tedi i pamučno platno</b><span>Ranfros, može biti bilo koji jednobojni ili dezen 😍</span><i>od 4.900 din</i></figcaption></figure>
+      <figure><img src="img/Dc21a0vDV5I_03.jpg" alt="Tedi gnezdo sa muslin gazom"><figcaption><b>Tedi i muslin gaza</b><span>Četvoroslojni muslin. Savršenstvo 😍😍😍</span><i>od 5.700 din</i></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow" id="utisci">Utisci</span><h2>Kad gnezdo <span class="script">stigne</span></h2></div><p>Poruke kupaca iz Instagram highlight-a „Utisci“.</p></div>
+    <div class="revs">
+      <div class="rev"><div class="bubble">Stiglo je gnezdo i jastucici.</div><div class="bubble">Jeste. Prelepo je. Prezadovoljna sam. Moj sestric ce uzivati u gnezdu.</div><div class="who"><i></i><span><b>Poruka kupca</b> · gnezdo</span></div></div>
+      <div class="rev"><div class="bubble">Stigla je posiljka, preslatko je, hvala na pokloncu, bas sam se odusevila!!!! Sigurna sam da ce mali Petar uzivati u svome gnezdu, pozdrav ❤️</div><div class="who"><i></i><span><b>Poruka kupca</b> · gnezdo</span></div></div>
+      <div class="rev"><div class="bubble">Savršeno. Kvalitetno sašiveno sa puno pažnje. Hvala za poklon</div><div class="who"><i></i><span><b>Poruka kupca</b></span></div></div>
+      <div class="rev"><div class="bubble">Ovo su stvarno Slatki snovi 😍</div><div class="who"><i></i><span><b>Poruka kupca</b></span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Za bebin kutak</span><h2>Upotpunite krevetac</h2></div><a class="btn btn-ghost" href="index.html#cenovnik">Ceo cenovnik →</a></div>
+    <div class="related">
+      <a class="card" href="index.html#ponuda"><div class="media"><img src="img/gnezdo-pletenina.jpg" alt="Gnezdo od pletenine"></div><div class="body"><h3>Gnezdo od pletenine</h3><span class="price"><small>od</small>4.300 din</span></div></a>
+      <a class="card" href="index.html#ponuda"><div class="media"><img src="img/DcgVtbnNuq6.jpg" alt="Pletenica za krevetac"></div><div class="body"><h3>Pletenice</h3><span class="price"><small>od</small>2.000 din</span></div></a>
+      <a class="card" href="index.html#ponuda"><div class="media"><img src="img/DdRig1UDdyd_19.jpg" alt="Zimsko ćebence sa vezom imena"></div><div class="body"><h3>Zimsko ćebence</h3><span class="price">2.000 din<s>od 2.400</s></span></div></a>
+      <a class="card" href="index.html#ponuda"><div class="media"><img src="img/baldahin-roze.jpg" alt="Baldahin od tila"></div><div class="body"><h3>Baldahin od tila</h3><span class="price">5.000 din</span></div></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="logo" href="index.html"><img src="img/logo.jpg" alt=""><span><b>Slatki snovi</b><small>handmade by Jelena</small></span></a>
+        <p style="margin-top:16px;font-size:14px;max-width:34ch">✨ Ljubav, kvalitet i sigurnost u svakom detalju. Ručno rađeni proizvodi, dostava širom Srbije.</p></div>
+      <div><h4>Prodavnica</h4><ul><li><a href="tedi-gnezdo.html">Tedi gnezdo</a></li><li><a href="index.html#ponuda">Ponuda</a></li><li><a href="index.html#cenovnik">Cenovnik</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul><li><a href="https://www.instagram.com/slatkisnovi.made.by.jelena/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://ig.me/m/slatkisnovi.made.by.jelena" target="_blank" rel="noopener">Poručivanje u DM 💌</a></li><li><a href="mailto:slatkisnovi.handmadebyjelena@gmail.com">E-mail</a></li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Slatki snovi Handmade by Jelena · Jelena Macut Magda PR</span><span>Cene iz cenovnika brenda · poštarina nije uračunata</span></div>
+  </div>
+</footer>
+
+<div class="sticky-buy" id="stickyBuy">
+  <div class="t"><small id="stickyName">Tedi gnezdo · skroz tedi · do 6 meseci</small><b id="stickyPrice">5.400 din</b></div>
+  <button class="btn btn-dark" type="button" onclick="addToCart()">Dodaj u korpu</button>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const COMBOS = [
+  {id:'tedi',   name:'Skroz tedi',                 info:'premekan',                          prices:[5400,6000], img:'img/Dc21a0vDV5I.jpg'},
+  {id:'platno', name:'Tedi i pamučno platno',      info:'jednobojno ili dezen po izboru',    prices:[4900,5500], img:'img/Dc21a0vDV5I_02.jpg'},
+  {id:'muslin', name:'Tedi i četvoroslojni muslin', info:'muslin gaza, „savršenstvo“',       prices:[5700,6300], img:'img/Dc21a0vDV5I_03.jpg'},
+];
+const SIZES = [{label:'do 6 meseci', short:'6 meseci'},{label:'do 9/12 meseci', short:'9/12 meseci'}];
+const PATTERNS = [
+  ['jednobojno','Jednobojno platno'],
+  ['sumske-zivotinje','Šumske životinje'],['nezno-lane','Nežno lane'],['srne-i-veverice','Srne i veverice'],
+  ['meda-i-lisica','Meda i lisica'],['duge','Duge'],['balerine','Balerine'],['bombone','Bombone'],
+  ['satori','Šatori'],['pera-i-srca','Pera i srca'],['zlatne-tackice','Zlatne tačkice'],
+];
+const GALLERY = ['img/Dc21a0vDV5I.jpg','img/Dc21a0vDV5I_02.jpg','img/Dc21a0vDV5I_03.jpg','img/tedi-gnezdo-cenovnik.jpg'];
+const state = {combo:0, size:0, pat:null, cart:0};
+const fmt = n => n.toLocaleString('sr-RS').replace(/,/g,'.') + ' din';
+const $ = id => document.getElementById(id);
+const price = () => COMBOS[state.combo].prices[state.size];
+const hasPlatno = () => COMBOS[state.combo].id === 'platno';
+const patName = () => state.pat ? PATTERNS.find(p=>p[0]===state.pat)[1] : null;
+
+function renderThumbs(){
+  const cur = $('stageImg').getAttribute('src');
+  $('thumbs').innerHTML = GALLERY.map(src => `<button type="button" class="${src===cur?'on':''}" data-src="${src}" aria-label="Prikaži sliku"><img src="${src}" alt=""></button>`).join('');
+  $('thumbs').querySelectorAll('button').forEach(b => b.onclick = () => showImg(b.dataset.src));
+}
+function showImg(src){
+  const el = $('stageImg'); if (el.getAttribute('src') === src) return;
+  el.style.opacity = 0;
+  setTimeout(()=>{ el.src = src; el.style.opacity = 1; }, 160);
+  $('thumbs').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.src===src));
+}
+function renderCombos(){
+  $('combos').innerHTML = COMBOS.map((c,i)=>`<button type="button" class="combo ${i===state.combo?'on':''}" data-i="${i}" aria-pressed="${i===state.combo}"><img src="${c.img}" alt=""><span><b>${c.name}</b><small>${c.info}</small></span><span class="p">od ${fmt(c.prices[0])}</span></button>`).join('');
+  $('combos').querySelectorAll('button').forEach(b => b.onclick = () => {
+    state.combo = +b.dataset.i; renderCombos(); renderSizes(); renderPats(); showImg(COMBOS[state.combo].img); update();
+  });
+}
+function renderSizes(){
+  const c = COMBOS[state.combo];
+  $('sizes').innerHTML = SIZES.map((s,i)=>`<button type="button" class="size ${i===state.size?'on':''}" data-i="${i}" aria-pressed="${i===state.size}"><b>${s.label}</b><small>${fmt(c.prices[i])}</small></button>`).join('');
+  $('sizes').querySelectorAll('button').forEach(b => b.onclick = () => { state.size = +b.dataset.i; renderSizes(); update(); });
+}
+function renderPats(){
+  const on = hasPlatno();
+  $('patBox').style.display = on ? '' : 'none';
+  $('patOff').style.display = on ? 'none' : '';
+  $('pickLabel').textContent = on ? (state.pat ? '1 izabran' : 'izaberite') : 'nije potrebno';
+  if (!on) return;
+  $('pats').innerHTML = PATTERNS.map(([id,name])=>{
+    const sel = state.pat===id;
+    const inner = id==='jednobojno' ? '<span>Jedno&shy;bojno</span>' : `<img src="img/dezeni/${id}.jpg" alt="">`;
+    return `<button type="button" class="patb ${id==='jednobojno'?'plain':''} ${sel?'on':''}" data-id="${id}" title="${name}" aria-label="${name}" aria-pressed="${sel}">${inner}</button>`;
+  }).join('');
+  $('pats').querySelectorAll('button').forEach(b => b.onclick = () => { state.pat = state.pat===b.dataset.id ? null : b.dataset.id; renderPats(); update(); });
+  $('picked').innerHTML = state.pat ? `Izabrano: ${patName()}${state.pat==='jednobojno'?' <em>(boju napišite u napomeni)</em>':''}` : '<em>Kliknite na dezen ili izaberite jednobojno platno.</em>';
+}
+$('vezOn').onchange = () => { $('vezName').classList.toggle('show', $('vezOn').checked); update(); };
+function update(){
+  const c = COMBOS[state.combo], s = SIZES[state.size];
+  $('price').textContent = fmt(price());
+  $('stickyPrice').textContent = fmt(price());
+  $('stickyName').textContent = `Tedi gnezdo · ${c.name.toLowerCase()} · ${s.label}`;
+}
+function summary(){
+  const c = COMBOS[state.combo], s = SIZES[state.size];
+  const lines = [`Zdravo! Želela bih Tedi gnezdo: ${c.name}, ${s.label} (${fmt(price())}).`];
+  if (hasPlatno()) lines.push(state.pat ? `Platno: ${patName()}` : 'Platno: volela bih da mi predložite dezen.');
+  if ($('vezOn').checked) { const n = $('vezName').value.trim(); lines.push(`Vez imena: ${n || 'da, ime ću javiti'}`); }
+  const note = $('note').value.trim(); if (note) lines.push(`Napomena: ${note}`);
+  return lines.join('\n');
+}
+let toastT;
+function toast(html){ const t=$('toast'); t.innerHTML=html; t.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'),2800); }
+function addToCart(){
+  state.cart += 1;
+  const b = $('cartCount'); b.textContent = state.cart; b.classList.add('bump'); setTimeout(()=>b.classList.remove('bump'),200);
+  const c = COMBOS[state.combo];
+  toast(`🧸 Dodato u korpu: <b>Tedi gnezdo, ${c.name.toLowerCase()}</b>` + (hasPlatno() && !state.pat ? ' · dezen biramo zajedno' : ''));
+}
+function sendDM(){
+  const text = summary();
+  const go = () => window.open('https://ig.me/m/slatkisnovi.made.by.jelena','_blank','noopener');
+  if (navigator.clipboard) navigator.clipboard.writeText(text).then(()=>{ toast('💌 Porudžbina je kopirana. Nalepite je u poruku.'); setTimeout(go,700); }, go);
+  else go();
+}
+
+new IntersectionObserver(([e]) => $('stickyBuy').classList.toggle('show', !e.isIntersecting && e.boundingClientRect.top < 0)).observe($('addBtn'));
+
+renderThumbs(); renderCombos(); renderSizes(); renderPats(); update();
+</script>
+<script>
+/* mobile menu: collects the header's nav links into one dropdown */
+(function(){var h=document.querySelector('header.site'),b=h&&h.querySelector('.menu-btn');if(!b)return;
+var p=document.createElement('nav');p.className='mobile-nav';p.setAttribute('aria-label','Meni');
+h.querySelectorAll('nav.main a').forEach(function(a){var c=a.cloneNode(true);c.removeAttribute('class');p.appendChild(c)});
+p.style.background=getComputedStyle(document.body).backgroundColor;h.appendChild(p);
+b.addEventListener('click',function(){var o=h.classList.toggle('menu-open');b.setAttribute('aria-expanded',o)});
+p.addEventListener('click',function(e){if(e.target.closest('a')){h.classList.remove('menu-open');b.setAttribute('aria-expanded','false')}});})();
+</script>
+</body>
+</html>
